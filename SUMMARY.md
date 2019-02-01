@@ -1,7 +1,7 @@
 # Summary
 
 - [Introduction](README.md)
-- 每周翻译
+- [每周翻译](translation/README.md)
   - [展示组件和容器组件](translation/2019-01-31.md)
-- Web
+- [Web](Web/README.md)
   - [IE 陨石坑](Web/IE.md)
