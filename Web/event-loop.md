@@ -7,3 +7,5 @@
 单线程是必要的，也是 JavaScript 这门语言的基石，原因之一在其最初也是最主要的执行环境浏览器中，我们需要进行各种各样的 dom 操作。试想一下，如果 JavaScript 是多线程的，那么当两个线程同时对 dom 进行一项操作，例如一个向其添加事件，而另一个删除了这个 dom，此时该如何处理呢？因此，为了保证不会发生类似于这个例子中的情景，JavaScript 选择只用一个主线程来执行代码，这样就保证了**程序执行的一致性**。
 
 ## Web Worker
+
+- [Web Worker 使用教程](http://www.ruanyifeng.com/blog/2018/07/web-worker.html)
