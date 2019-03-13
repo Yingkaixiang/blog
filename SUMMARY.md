@@ -4,6 +4,7 @@
 - [每周翻译](translation/README.md)
   - [展示组件和容器组件](translation/2019-01-31.md)
   - [理解 React Hooks](translation/2019-02-21.md)
+  - [Outline 与 Border 属性的区别](translation/2019-03-13.md)
 - [Web](Web/README.md)
   - [IE 陨石坑](Web/IE.md)
   - [如何发布一个 React 组件](Web/how-to-create-a-react-component.md)
