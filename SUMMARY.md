@@ -6,6 +6,8 @@
   - [理解 React Hooks](translation/2019-02-21.md)
 - [Web](Web/README.md)
   - [IE 陨石坑](Web/IE.md)
+  - [如何发布一个 React 组件](Web/how-to-create-a-react-component.md)
+  - [Event Loop](Web/event-loop.md)
 - [PWA](PWA/README.md)
 - [微信小程序](mp/README.md)
 - [Flutter](Flutter/README.md)
