@@ -7,7 +7,7 @@
     - [Event Loop](Web/event-loop.md)
     - [JS 浮点数](Web/js-float.md)
     - React
-      - [如何发布一个 React 组件](Web/how-to-create-a-react-component.md)
+      - [手摸手教你发布一个 react 组件](Web/how-to-create-a-react-component.md)
       - [展示组件和容器组件](translation/2019-01-31.md)
       - [理解 React Hooks](translation/2019-02-21.md)
   - [CSS](CSS/README.md)
