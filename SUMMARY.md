@@ -6,13 +6,13 @@
     - [IE 陨石坑](Web/IE.md)
     - [Event Loop](Web/event-loop.md)
     - [JS 浮点数](Web/js-float.md)
-    - [使用 webpack 编译打包你的 typescript 库](translation/2019-03-27.md)
+    - [使用 webpack 编译打包你的 typescript 库（译）](translation/2019-03-27.md)
     - React
       - [手摸手教你发布一个 react 组件](Web/how-to-create-a-react-component.md)
-      - [展示组件和容器组件](translation/2019-01-31.md)
-      - [理解 React Hooks](translation/2019-02-21.md)
+      - [展示组件和容器组件（译）](translation/2019-01-31.md)
+      - [理解 React Hooks（译）](translation/2019-02-21.md)
   - [CSS](CSS/README.md)
-    - [Outline 与 Border 属性的区别](translation/2019-03-13.md)
+    - [Outline 与 Border 属性的区别（译）](translation/2019-03-13.md)
   - HTML
     - [语义化标签](HTML/tag.md)
 - [PWA](PWA/README.md)
@@ -20,7 +20,9 @@
 - [Flutter](Flutter/README.md)
 - [Electron](Electron/README.md)
 - 正则表达式
-- [每周翻译](translation/README.md)
+- [VS Code](VSCode/README.md)
+- [实用工具](Tools.md)
+- [个人翻译](translation/README.md)
   - [展示组件和容器组件](translation/2019-01-31.md)
   - [理解 React Hooks](translation/2019-02-21.md)
   - [Outline 与 Border 属性的区别](translation/2019-03-13.md)
