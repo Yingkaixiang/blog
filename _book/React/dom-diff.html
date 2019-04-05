@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Event Loop · GitBook</title>
+        <title>深入理解 DOM-diff · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="js-float.html" />
+    <link rel="next" href="source-code-analyze.html" />
     
     
-    <link rel="prev" href="IE.html" />
+    <link rel="prev" href="../translation/2019-02-21.html" />
     
 
     </head>
@@ -102,9 +102,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="../Web/">
             
-                <a href="./">
+                <a href="../Web/">
             
                     
                     Web
@@ -130,9 +130,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1.1" data-path="IE.html">
+        <li class="chapter " data-level="1.2.1.1" data-path="../Web/IE.html">
             
-                <a href="IE.html">
+                <a href="../Web/IE.html">
             
                     
                     IE 陨石坑
@@ -143,9 +143,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.1.2" data-path="event-loop.html">
+        <li class="chapter " data-level="1.2.1.2" data-path="../Web/event-loop.html">
             
-                <a href="event-loop.html">
+                <a href="../Web/event-loop.html">
             
                     
                     Event Loop
@@ -156,9 +156,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.1.3" data-path="js-float.html">
+        <li class="chapter " data-level="1.2.1.3" data-path="../Web/js-float.html">
             
-                <a href="js-float.html">
+                <a href="../Web/js-float.html">
             
                     
                     JS 浮点数
@@ -196,9 +196,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1.5.1" data-path="how-to-create-a-react-component.html">
+        <li class="chapter " data-level="1.2.1.5.1" data-path="../Web/how-to-create-a-react-component.html">
             
-                <a href="how-to-create-a-react-component.html">
+                <a href="../Web/how-to-create-a-react-component.html">
             
                     
                     手摸手教你发布一个 react 组件
@@ -235,9 +235,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.1.5.4" data-path="../React/dom-diff.html">
+        <li class="chapter active" data-level="1.2.1.5.4" data-path="dom-diff.html">
             
-                <a href="../React/dom-diff.html">
+                <a href="dom-diff.html">
             
                     
                     深入理解 DOM-diff
@@ -248,9 +248,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.1.5.5" data-path="../React/source-code-analyze.html">
+        <li class="chapter " data-level="1.2.1.5.5" data-path="source-code-analyze.html">
             
-                <a href="../React/source-code-analyze.html">
+                <a href="source-code-analyze.html">
             
                     
                     源码分析
@@ -532,7 +532,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Event Loop</a>
+        <a href=".." >深入理解 DOM-diff</a>
     </h1>
 </div>
 
@@ -547,16 +547,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;-event-loop&#xFF08;&#x6D4F;&#x89C8;&#x5668;&#xFF09;">&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF; Event Loop&#xFF08;&#x6D4F;&#x89C8;&#x5668;&#xFF09;</h1>
+                                <h1 id="&#x6DF1;&#x5165;&#x7406;&#x89E3;-virtual-dom">&#x6DF1;&#x5165;&#x7406;&#x89E3; Virtual DOM</h1>
+<h2 id="&#x76EE;&#x5F55;">&#x76EE;&#x5F55;</h2>
 <ul>
-<li><a href="http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D" target="_blank">&#x83F2;&#x5229;&#x666E;&#xB7;&#x7F57;&#x4F2F;&#x8328;&#xFF1A;&#x5230;&#x5E95;&#x4EC0;&#x4E48;&#x662F; Event Loop &#x5462;&#xFF1F; | &#x6B27;&#x6D32; JSConf 2014</a></li>
+<li>MVC &#x4E0E; MVVM &#x7684;&#x533A;&#x522B;&#xFF1F;</li>
+<li>&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528; virtual DOM?</li>
+<li>&#x4E3A;&#x4EC0;&#x4E48;&#x8BF4;&#x6D4F;&#x89C8;&#x5668;&#x7684; DOM &#x64CD;&#x4F5C;&#x5F88;&#x6162;&#xFF1F;</li>
+<li>&#x6811;&#x7684;&#x4F18;&#x5148;&#x6DF1;&#x5EA6;&#x904D;&#x5386;</li>
+<li>&#x7F16;&#x8F91;&#x8DDD;&#x79BB;&#x7B97;&#x6CD5;&#xFF08;&#x7406;&#x89E3;&#x4E3A;&#x4E3B;&#xFF09;</li>
+<li>React DOM-diff &#x7B97;&#x6CD5;&#x4E2D;&#x7684;&#x7F16;&#x8F91;&#x8DDD;&#x79BB;</li>
 </ul>
-<h2 id="javascript-&#x4E3A;&#x4EC0;&#x4E48;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#xFF1F;">JavaScript &#x4E3A;&#x4EC0;&#x4E48;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#xFF1F;</h2>
-<p>&#x5355;&#x7EBF;&#x7A0B;&#x662F;&#x5FC5;&#x8981;&#x7684;&#xFF0C;&#x4E5F;&#x662F; JavaScript &#x8FD9;&#x95E8;&#x8BED;&#x8A00;&#x7684;&#x57FA;&#x77F3;&#xFF0C;&#x539F;&#x56E0;&#x4E4B;&#x4E00;&#x5728;&#x5176;&#x6700;&#x521D;&#x4E5F;&#x662F;&#x6700;&#x4E3B;&#x8981;&#x7684;&#x6267;&#x884C;&#x73AF;&#x5883;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684; dom &#x64CD;&#x4F5C;&#x3002;&#x8BD5;&#x60F3;&#x4E00;&#x4E0B;&#xFF0C;&#x5982;&#x679C; JavaScript &#x662F;&#x591A;&#x7EBF;&#x7A0B;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x5BF9; dom &#x8FDB;&#x884C;&#x4E00;&#x9879;&#x64CD;&#x4F5C;&#xFF0C;&#x4F8B;&#x5982;&#x4E00;&#x4E2A;&#x5411;&#x5176;&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#xFF0C;&#x800C;&#x53E6;&#x4E00;&#x4E2A;&#x5220;&#x9664;&#x4E86;&#x8FD9;&#x4E2A; dom&#xFF0C;&#x6B64;&#x65F6;&#x8BE5;&#x5982;&#x4F55;&#x5904;&#x7406;&#x5462;&#xFF1F;&#x56E0;&#x6B64;&#xFF0C;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#x7C7B;&#x4F3C;&#x4E8E;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x7684;&#x60C5;&#x666F;&#xFF0C;JavaScript &#x9009;&#x62E9;&#x53EA;&#x7528;&#x4E00;&#x4E2A;&#x4E3B;&#x7EBF;&#x7A0B;&#x6765;&#x6267;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4FDD;&#x8BC1;&#x4E86;<strong>&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x7684;&#x4E00;&#x81F4;&#x6027;</strong>&#x3002;</p>
-<h2 id="web-worker">Web Worker</h2>
-<ul>
-<li><a href="http://www.ruanyifeng.com/blog/2018/07/web-worker.html" target="_blank">Web Worker &#x4F7F;&#x7528;&#x6559;&#x7A0B;</a></li>
-</ul>
+<h3 id="react-dom-diff-&#x7B97;&#x6CD5;&#x4E2D;&#x7684;&#x7F16;&#x8F91;&#x8DDD;&#x79BB;">React DOM-diff &#x7B97;&#x6CD5;&#x4E2D;&#x7684;&#x7F16;&#x8F91;&#x8DDD;&#x79BB;</h3>
+<p>&#x4E24;&#x4E2A;&#x9700;&#x8981;&#x88AB;&#x6BD4;&#x8F83;&#x7684;&#x6570;&#x7EC4;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E3A; <code>object[]</code>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x88AB;&#x6BD4;&#x8F83;&#x7684;&#x5C5E;&#x6027;&#xFF08;React &#x4E2D; &#x5373;&#x4E3A; key&#xFF09;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x903B;&#x8F91;&#x5982;&#x4E0B;&#xFF08;<a href="https://github.com/livoras/list-diff" target="_blank">&#x53C2;&#x8003;&#x4EE3;&#x7801;</a>&#xFF09;&#xFF1A;</p>
+<p><img src="list-diff.jpg" alt=""></p>
 
                                 
                                 </section>
@@ -584,12 +587,12 @@
 
             
                 
-                <a href="IE.html" class="navigation navigation-prev " aria-label="Previous page: IE 陨石坑">
+                <a href="../translation/2019-02-21.html" class="navigation navigation-prev " aria-label="Previous page: 理解 React Hooks（译）">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="js-float.html" class="navigation navigation-next " aria-label="Next page: JS 浮点数">
+                <a href="source-code-analyze.html" class="navigation navigation-next " aria-label="Next page: 源码分析">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -600,7 +603,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Event Loop","level":"1.2.1.2","depth":3,"next":{"title":"JS 浮点数","level":"1.2.1.3","depth":3,"path":"Web/js-float.md","ref":"Web/js-float.md","articles":[]},"previous":{"title":"IE 陨石坑","level":"1.2.1.1","depth":3,"path":"Web/IE.md","ref":"Web/IE.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Web/event-loop.md","mtime":"2019-04-01T02:19:08.788Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-05T12:28:53.983Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"深入理解 DOM-diff","level":"1.2.1.5.4","depth":4,"next":{"title":"源码分析","level":"1.2.1.5.5","depth":4,"path":"React/source-code-analyze.md","ref":"React/source-code-analyze.md","articles":[]},"previous":{"title":"理解 React Hooks（译）","level":"1.2.1.5.3","depth":4,"path":"translation/2019-02-21.md","ref":"translation/2019-02-21.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"React/dom-diff.md","mtime":"2019-04-05T10:55:42.519Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-05T12:28:53.983Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

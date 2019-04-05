@@ -11,6 +11,8 @@
       - [手摸手教你发布一个 react 组件](Web/how-to-create-a-react-component.md)
       - [展示组件和容器组件（译）](translation/2019-01-31.md)
       - [理解 React Hooks（译）](translation/2019-02-21.md)
+      - [深入理解 DOM-diff](React/dom-diff.md)
+      - [源码分析](React/source-code-analyze.md)
   - [CSS](CSS/README.md)
     - [Outline 与 Border 属性的区别（译）](translation/2019-03-13.md)
   - HTML
