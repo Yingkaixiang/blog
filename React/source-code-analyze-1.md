@@ -7,6 +7,8 @@
 * [Symbol](http://es6.ruanyifeng.com/#docs/symbol)
 * [$$typeof 属性的意义](http://tech.colla.me/zh/show/why_react_tags_element_with_$$typeof)
 
+## 代码分析
+
 ```js
 import {REACT_ELEMENT_TYPE} from 'shared/ReactSymbols';
 ```

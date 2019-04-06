@@ -1,6 +1,6 @@
-# 手摸手教你发布一个 react 组件
+# 手摸手教你发布一个 React 组件
 
-使用 typescript 和 webpack 搭建一个 react 组件的开发脚手架模板。
+使用 TypeScript 和 webpack 搭建一个 react 组件的开发脚手架模板。
 
 ## 调试
 

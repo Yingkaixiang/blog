@@ -4,7 +4,8 @@
   "description": "个人博客",
   "scripts": {
     "start": "npx gitbook serve",
-    "build": "npx gitbook build"
+    "build": "npx gitbook build",
+    "push": "yarn build && git add . && git cz"
   },
   "repository": {
     "type": "git",

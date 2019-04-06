@@ -1,22 +1,31 @@
 # Summary
 
 - [Introduction](README.md)
+- [翻译](translation/README.md)
+  - [展示组件和容器组件](translation/2019-01-31.md)
+  - [理解 React Hooks](translation/2019-02-21.md)
+  - [Outline 与 Border 属性的区别](translation/2019-03-13.md)
+  - [使用 webpack 编译打包你的 typescript 库](translation/2019-03-27.md)
+- [设计模式](DesignPattern/README.md)
+- JavaScript
+  - [深入理解事件循环（Event Loop）](JavaScript/event-loop.md)
+  - [深入理解浮点数](JavaScript/float-number.md)
+  - [深入理解 prototype](JavaScript/prototype.md)
+  - [axios 的坑](JavaScript/axios.md)
+- CSS
+  - [Outline 与 Border 属性的区别（译）](translation/2019-03-13.md)
+- HTML
+  - [语义化标签](HTML/tag.md)
+- React
+  - [源码分析(一)](React/source-code-analyze-1.md)
+  - [Virtual DOM](React/dom-diff.md)
+  - [手摸手教你发布一个 React 组件](React/how-to-create-a-react-component.md)
+  - [展示组件和容器组件（译）](translation/2019-01-31.md)
+  - [理解 React Hooks（译）](translation/2019-02-21.md)
+- Webpack
+  - [使用 webpack 编译打包你的 typescript 库（译）](translation/2019-03-27.md)
 - [Web](Web/README.md)
-  - JavaScript
-    - [IE 陨石坑](Web/IE.md)
-    - [Event Loop](Web/event-loop.md)
-    - [JS 浮点数](Web/js-float.md)
-    - [使用 webpack 编译打包你的 typescript 库（译）](translation/2019-03-27.md)
-    - React
-      - [手摸手教你发布一个 react 组件](Web/how-to-create-a-react-component.md)
-      - [展示组件和容器组件（译）](translation/2019-01-31.md)
-      - [理解 React Hooks（译）](translation/2019-02-21.md)
-      - [深入理解 DOM-diff](React/dom-diff.md)
-      - [源码分析](React/source-code-analyze.md)
-  - [CSS](CSS/README.md)
-    - [Outline 与 Border 属性的区别（译）](translation/2019-03-13.md)
-  - HTML
-    - [语义化标签](HTML/tag.md)
+  - [IE 的坑](Web/IE.md)  
 - [PWA](PWA/README.md)
 - [微信小程序](mp/README.md)
 - [Flutter](Flutter/README.md)
@@ -24,8 +33,3 @@
 - 正则表达式
 - [VS Code](VSCode/README.md)
 - [实用工具](Tools.md)
-- [个人翻译](translation/README.md)
-  - [展示组件和容器组件](translation/2019-01-31.md)
-  - [理解 React Hooks](translation/2019-02-21.md)
-  - [Outline 与 Border 属性的区别](translation/2019-03-13.md)
-  - [使用 webpack 编译打包你的 typescript 库](translation/2019-03-27.md)
