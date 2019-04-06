@@ -1,0 +1,30 @@
+{
+  "name": "ykx-frontend-wiki",
+  "version": "1.0.0",
+  "description": "个人博客",
+  "scripts": {
+    "start": "npx gitbook serve",
+    "build": "npx gitbook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yingkaixiang/ykx-frontend-wiki.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yingkaixiang/ykx-frontend-wiki/issues"
+  },
+  "homepage": "https://github.com/Yingkaixiang/ykx-frontend-wiki#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
