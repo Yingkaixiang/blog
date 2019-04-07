@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>IE 的坑 · GitBook</title>
+        <title>冒泡排序 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../PWA/README.md" />
+    <link rel="next" href="selection.html" />
     
-    
-    <link rel="prev" href="./" />
     
 
     </head>
@@ -200,9 +198,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../Algorithm/bubble.html">
+        <li class="chapter active" data-level="1.4.1" data-path="bubble.html">
             
-                <a href="../Algorithm/bubble.html">
+                <a href="bubble.html">
             
                     
                     冒泡排序
@@ -213,9 +211,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../Algorithm/selection.html">
+        <li class="chapter " data-level="1.4.2" data-path="selection.html">
             
-                <a href="../Algorithm/selection.html">
+                <a href="selection.html">
             
                     
                     选择排序
@@ -482,9 +480,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="./">
+        <li class="chapter " data-level="1.10" data-path="../Web/">
             
-                <a href="./">
+                <a href="../Web/">
             
                     
                     Web
@@ -496,9 +494,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.10.1" data-path="IE.html">
+        <li class="chapter " data-level="1.10.1" data-path="../Web/IE.html">
             
-                <a href="IE.html">
+                <a href="../Web/IE.html">
             
                     
                     IE 的坑
@@ -635,7 +633,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >IE 的坑</a>
+        <a href=".." >冒泡排序</a>
     </h1>
 </div>
 
@@ -650,18 +648,55 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ie">IE</h1>
-<h5 id="1-ajax-get-&#x8BF7;&#x6C42;&#x7F13;&#x5B58;">1. AJAX GET &#x8BF7;&#x6C42;&#x7F13;&#x5B58;</h5>
-<p>&#x76F8;&#x540C;&#x7684; GET &#x8BF7;&#x6C42;&#x5730;&#x5740; ie &#x4F1A;&#x4F7F;&#x7528;&#x672C;&#x5730;&#x7684;&#x7F13;&#x5B58;&#x6570;&#x636E;&#x800C;&#x4E0D;&#x662F;&#x5411;&#x670D;&#x52A1;&#x5668;&#x518D;&#x6B21;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x3002;</p>
-<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;</p>
+                                <h1 id="&#x5192;&#x6CE1;&#x6392;&#x5E8F;">&#x5192;&#x6CE1;&#x6392;&#x5E8F;</h1>
+<p>&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x76F8;&#x90BB;&#x7684;&#x9879;&#xFF0C;&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x4E2A;&#x6BD4;&#x7B2C;&#x4E8C;&#x4E2A;&#x5927;&#xFF0C;&#x5219;&#x4EA4;&#x6362;&#x4ED6;&#x4EEC;&#x3002;</p>
 <ul>
-<li>&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x7684; method</li>
-<li>&#x5728;&#x8BF7;&#x6C42;&#x7684; query &#x4E2D;&#x52A0;&#x5165;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x5982; <code>http://www.xxxxx.com?__timestamp__=10000</code></li>
+<li>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(n&#xB2;)</li>
 </ul>
-<h5 id="2-&#x65F6;&#x95F4;&#x683C;&#x5F0F;&#x517C;&#x5BB9;&#x6027;">2. &#x65F6;&#x95F4;&#x683C;&#x5F0F;&#x517C;&#x5BB9;&#x6027;</h5>
-<p>IE &#x65E0;&#x6CD5;&#x89E3;&#x6790; 2019-01-01 &#x8FD9;&#x6837;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x53EA;&#x80FD;&#x4F7F;&#x7528; 2019/01/01&#x3002;</p>
-<h5 id="3-ajax-&#x4E2D;&#x6587;&#x4E71;&#x7801;">3. AJAX &#x4E2D;&#x6587;&#x4E71;&#x7801;</h5>
-<p>AJAX &#x4E2D;&#x5982;&#x679C;&#x5E26;&#x6709;&#x4E2D;&#x6587;&#x65F6;&#x9700;&#x8981;&#x624B;&#x52A8; <code>encodeURI</code>&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x53D1;&#x9001;&#x4E71;&#x7801;&#x3002;<code>axios</code> &#x5E93;&#x8BF7;&#x76F4;&#x63A5;&#x4F7F;&#x7528; <code>params</code> &#x53C2;&#x6570;&#xFF0C;&#x4E0D;&#x8981;&#x624B;&#x52A8;&#x62FC;&#x63A5; query&#xFF0C;restful API &#x7981;&#x6B62;&#x4F7F;&#x7528;&#x4E2D;&#x6587;&#x3002;</p>
+<h2 id="&#x56FE;&#x793A;">&#x56FE;&#x793A;</h2>
+<p><img src="asserts/bubble.gif" alt=""></p>
+<h2 id="&#x539F;&#x59CB;&#x4EE3;&#x7801;">&#x539F;&#x59CB;&#x4EE3;&#x7801;</h2>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x6700;&#x539F;&#x59CB;&#x7684;&#x65B9;&#x6CD5;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bubble</span>(<span class="hljs-params">arr</span>) </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; arr.length; i += <span class="hljs-number">1</span>) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> j = <span class="hljs-number">0</span>; j &lt; arr.length; j += <span class="hljs-number">1</span>) {
+      <span class="hljs-keyword">if</span> (arr[j] &gt; arr[j + <span class="hljs-number">1</span>]) {
+        <span class="hljs-keyword">var</span> temp = arr[j];
+        arr[j] = arr[j + <span class="hljs-number">1</span>];
+        arr[j + <span class="hljs-number">1</span>] = temp;
+      }
+    }
+  }
+}
+</code></pre>
+<h2 id="&#x7B2C;&#x4E00;&#x6B21;&#x4F18;&#x5316;">&#x7B2C;&#x4E00;&#x6B21;&#x4F18;&#x5316;</h2>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x5728;&#x6BD4;&#x8F83;&#x76F8;&#x90BB;&#x4E24;&#x9879;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6570;&#x7EC4;&#x7684;&#x6700;&#x540E;&#x4E00;&#x9879;&#x5176;&#x5B9E;&#x662F;&#x5728;&#x548C; <code>undefined</code> &#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF0C;&#x503C;&#x6C38;&#x8FDC;&#x662F; <code>false</code>&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4ECE;&#x5185;&#x5FAA;&#x73AF;&#x51CF;&#x53BB;&#x8FD9;&#x6B21;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bubble</span>(<span class="hljs-params">arr</span>) </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; arr.length; i += <span class="hljs-number">1</span>) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> j = <span class="hljs-number">0</span>; j &lt; arr.length - <span class="hljs-number">1</span>; j += <span class="hljs-number">1</span>) {
+      <span class="hljs-keyword">if</span> (arr[j] &gt; arr[j + <span class="hljs-number">1</span>]) {
+        <span class="hljs-keyword">var</span> temp = arr[j];
+        arr[j] = arr[j + <span class="hljs-number">1</span>];
+        arr[j + <span class="hljs-number">1</span>] = temp;
+      }
+    }
+  }
+}
+</code></pre>
+<h2 id="&#x7B2C;&#x4E8C;&#x6B21;&#x4F18;&#x5316;">&#x7B2C;&#x4E8C;&#x6B21;&#x4F18;&#x5316;</h2>
+<p>&#x5728;&#x6211;&#x4EEC;&#x6BCF;&#x4E00;&#x8F6E;&#x7684;&#x6BD4;&#x8F83;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x8FD9;&#x4E00;&#x8F6E;&#x7684;&#x6700;&#x540E;&#x4E00;&#x9879;&#x4E00;&#x5B9A;&#x662F;&#x672C;&#x8F6E;&#x4E2D;&#x7684;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x5373;&#x4E3A;&#x6709;&#x5E8F;&#x9879;&#xFF0C;&#x6545;&#x53EF;&#x4EE5;&#x5728;&#x540E;&#x5E8F;&#x7684;&#x5185;&#x5FAA;&#x73AF;&#x4E2D;&#x51CF;&#x53BB;&#x672C;&#x6B21;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bubble</span>(<span class="hljs-params">arr</span>) </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; arr.length; i += <span class="hljs-number">1</span>) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> j = <span class="hljs-number">0</span>; j &lt; arr.length - <span class="hljs-number">1</span> - i; j += <span class="hljs-number">1</span>) {
+      <span class="hljs-keyword">if</span> (arr[j] &gt; arr[j + <span class="hljs-number">1</span>]) {
+        <span class="hljs-keyword">var</span> temp = arr[j];
+        arr[j] = arr[j + <span class="hljs-number">1</span>];
+        arr[j + <span class="hljs-number">1</span>] = temp;
+      }
+    }
+  }
+}
+</code></pre>
 
                                 
                                 </section>
@@ -689,12 +724,8 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Web">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="../PWA/README.md" class="navigation navigation-next " aria-label="Next page: PWA">
+                <a href="selection.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 选择排序">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -705,7 +736,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"IE 的坑","level":"1.10.1","depth":2,"next":{"title":"PWA","level":"1.11","depth":1,"path":"PWA/README.md","ref":"PWA/README.md","articles":[]},"previous":{"title":"Web","level":"1.10","depth":1,"path":"Web/README.md","ref":"Web/README.md","articles":[{"title":"IE 的坑","level":"1.10.1","depth":2,"path":"Web/IE.md","ref":"Web/IE.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Web/IE.md","mtime":"2019-04-01T02:19:08.788Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-07T10:06:38.050Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"冒泡排序","level":"1.4.1","depth":2,"next":{"title":"选择排序","level":"1.4.2","depth":2,"path":"Algorithm/selection.md","ref":"Algorithm/selection.md","articles":[]},"previous":{"title":"算法","level":"1.4","depth":1,"ref":"","articles":[{"title":"冒泡排序","level":"1.4.1","depth":2,"path":"Algorithm/bubble.md","ref":"Algorithm/bubble.md","articles":[]},{"title":"选择排序","level":"1.4.2","depth":2,"path":"Algorithm/selection.md","ref":"Algorithm/selection.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Algorithm/bubble.md","mtime":"2019-04-07T09:53:07.077Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-07T10:06:38.050Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

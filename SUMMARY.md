@@ -7,6 +7,9 @@
   - [Outline 与 Border 属性的区别](translation/2019-03-13.md)
   - [使用 webpack 编译打包你的 typescript 库](translation/2019-03-27.md)
 - [设计模式](DesignPattern/README.md)
+- 算法
+  - [冒泡排序](Algorithm/bubble.md)
+  - [选择排序](Algorithm/selection.md)
 - JavaScript
   - [深入理解事件循环（Event Loop）](JavaScript/event-loop.md)
   - [深入理解浮点数](JavaScript/float-number.md)
