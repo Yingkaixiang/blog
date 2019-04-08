@@ -25,6 +25,7 @@
   - [手摸手教你发布一个 React 组件](React/how-to-create-a-react-component.md)
   - [展示组件和容器组件（译）](translation/2019-01-31.md)
   - [理解 React Hooks（译）](translation/2019-02-21.md)
+  - [深入理解生命周期](React/lifecycle.md)
 - Webpack
   - [使用 webpack 编译打包你的 typescript 库（译）](translation/2019-03-27.md)
 - [Web](Web/README.md)
