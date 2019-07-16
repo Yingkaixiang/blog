@@ -15,10 +15,13 @@
   - [深入理解浮点数](JavaScript/float-number.md)
   - [深入理解 prototype](JavaScript/prototype.md)
   - [axios 的坑](JavaScript/axios.md)
+- Babel
+  - [bable-preset-env](Babel/config.md)
 - CSS
   - [Outline 与 Border 属性的区别（译）](translation/2019-03-13.md)
 - HTML
   - [语义化标签](HTML/tag.md)
+  - [Unicode](HTML/unicode.md)
 - React
   - [源码分析(一)](React/source-code-analyze-1.md)
   - [Virtual DOM](React/dom-diff.md)
@@ -31,9 +34,10 @@
 - [Web](Web/README.md)
   - [IE 的坑](Web/IE.md)  
 - [PWA](PWA/README.md)
-- [微信小程序](mp/README.md)
+- [微信](Wechat/README.md)
 - [Flutter](Flutter/README.md)
 - [Electron](Electron/README.md)
-- 正则表达式
+- [Storybook](Storybook/README.md)
+- [正则表达式](RegExp/README.md)
 - [VS Code](VSCode/README.md)
 - [实用工具](Tools.md)

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "个人博客",
   "scripts": {
-    "start": "npx gitbook serve",
-    "build": "npx gitbook build",
+    "start": "gitbook serve",
+    "build": "gitbook build",
     "push": "yarn build && git add . && git cz"
   },
   "repository": {
@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/Yingkaixiang/ykx-frontend-wiki#readme",
   "devDependencies": {
-    "cz-conventional-changelog": "^2.1.0"
+    "cz-conventional-changelog": "^2.1.0",
+    "gitbook-cli": "^2.3.2"
   },
   "config": {
     "commitizen": {

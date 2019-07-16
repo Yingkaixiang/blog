@@ -6,7 +6,7 @@
 
 ```
 // 本地编辑
-yarn dev
+yarn start
 
 // 打包成静态页面
 yarn build
