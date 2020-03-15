@@ -28,4 +28,4 @@
 
 两个需要被比较的数组的数据结构为 `object[]`，在指定被比较的属性（React 中 即为 key）的情况下，逻辑如下（[参考代码](https://github.com/livoras/list-diff)）：
 
-![](./list-diff.jpg)
+![](./asserts/list-diff.jpg)

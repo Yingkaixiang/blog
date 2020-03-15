@@ -1,11 +1,10 @@
 {
-  "name": "ykx-frontend-wiki",
+  "name": "blog",
   "version": "1.0.0",
   "description": "个人博客",
   "scripts": {
     "start": "gitbook serve",
-    "build": "gitbook build",
-    "push": "yarn build && git add . && git cz"
+    "build": "gitbook build"
   },
   "repository": {
     "type": "git",
