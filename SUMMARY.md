@@ -15,6 +15,7 @@
   - [nvm](ToolChain/nvm/README.md)
   - [homebrew](ToolChain/homebrew/README.md)
   - [lerna](ToolChain/lerna/README.md)
+  - [shelljs](ToolChain/shelljs/README.md)
 - [网络]()
   - [网络安全](Network/Security/README.md)
   - [手把手教你如何将线上域名代理到本地](Network/how-to-proxy-to-local.md)
